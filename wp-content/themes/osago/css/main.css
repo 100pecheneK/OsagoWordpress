@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 100px;
+    background: white;
+}
+
+.header .container {
+    height: 100px;
+}
+
+.header .row {
+    height: 100px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.header .phone_number {
+    font-size: 16px;
+    text-align: right;
+}
+
+.btn {
+    /* height: 40px; */
+    padding: 10px 15px;
+    background-color: #539DC4;
+    /* border-radius: 10px; */
+    color: white;
+    font-size: 16px;
+    /* text-decoration: none; */
+}
+
+
+.header .contact {
+    background-color: #539DC4;
+    color: white;
+}
+
+.section1 {
+    height: 600px;
+    background-color: #539DC4;
+    background: url("/images/section1.png") no-repeat;
+    color: white;
+}
+
+.section1 .container {
+    height: 600px;
+}
+
+.section1 .content {
+    height: 600px;
+    display: flex;
+}
+
+.section1 .slogan {
+    font-size: 48px;
+}
+
+.section1 .info {
+    font-size: 28px;
+}
+
+.section1 .read_more {
+    height: 54px;
+    width: 208px;
+    color: white;
+    font-size: 18px;
+    border: white solid 3px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.section1 .read_more:focus,
+.read_more.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.section2 .__section {
+    margin-top: 64px;
+}
+
+.section2 .about {
+    margin-top: 30px;
+}
+
+.section2 h2 {
+    color: #539DC4;
+    font-size: 28px;
+}
+
+.section2 p {
+    font-size: 24px;
+}
+
+
+.section2 .question,
+.answer {
+    margin-top: 20px;
+}
+
+/* Часто задаваемые вопросы клиентов */
+.bubble {
+    display: inline-block;
+    position: relative;
+}
+
+.bubble>span {
+    color: white;
+    font-size: 24px;
+    border-radius: 0.4em;
+    display: inline-block;
+    padding: 10px;
+    z-index: 1;
+}
+
+.bubble::after {
+    background-color: #ffffff;
+    border-radius: 0 0 50% 0;
+    border-right: 0;
+    bottom: 14px;
+    content: '';
+    height: 30px;
+    margin-top: -5px;
+    margin-right: -5px;
+    position: absolute;
+    transform: rotate(10deg);
+    width: 30px;
+    z-index: -1;
+}
+
+.bubble::before {
+    border-radius: 50%;
+    border-right: 0;
+    bottom: 7px;
+    content: '';
+    height: 30px;
+    margin-top: -5px;
+    margin-right: -5px;
+    position: absolute;
+    transform: rotate(20deg);
+    width: 30px;
+    z-index: -1;
+}
+
+
+.bubble-question>span {
+    background-color: #a5a5a5;
+}
+
+.bubble-question::after {
+    left: -21px;
+}
+
+.bubble-question::before {
+    background-color: #a5a5a5;
+    left: -11px;
+}
+
+.bubble-answer>span {
+    background-color: #539DC4;
+}
+
+.bubble-answer::after {
+    right: -21px;
+}
+
+.bubble-answer::before {
+    background-color: #539DC4;
+    right: -11px;
+}
+
+/* /Часто задаваемые вопросы клиентов */
+
+.partners {
+    background-color: #539DC4;
+}
+
+.partners h2 {
+    margin-top: 20px;
+    color: white !important;
+}
+
+.partner img {
+    display: block;
+    margin: auto;
+}
+
+.partner .donations {
+    background-color: white;
+    color: black;
+}
