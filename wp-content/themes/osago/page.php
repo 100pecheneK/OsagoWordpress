@@ -84,7 +84,7 @@
                                 <img class="img-thumbnail" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                             </div>
                             <div class="col-12 mt-1">
-                               <p class="d-flex m-auto btn btn-light donations">Собрано <?php the_field('donation') ?></p>
+                                <p class="d-flex m-auto btn btn-light donations">Собрано <?php the_field('donation') ?></p>
                             </div>
                         </div>
                     </div>
@@ -119,132 +119,10 @@
 
 <div class="container-fluid contact-from header p-3">
     <div class="container">
-        <div class="row">
-            <h2 class="text-white">Заявка на страхование</h2>
-        </div>
-        <form>
-            <div class="row">
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="ФИО">
-                </div>
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="Дата начала действия полиса">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="Водитель">
-                </div>
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="Диагностичесая карта">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="Телефон">
-                </div>
-                <div class="col-12 col-lg-6 mt-2">
-                    <input type="text" class="form-control" placeholder="Электронная почта">
-                </div>
-            </div>
-            <div class="row">
-                <h2 class="text-white">Загрузите документы</h2>
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">Паспорт страхователя (Основная
-                                страница)</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-                    <hr>
-
-                </div>
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">Паспорт страхователя (Страница с
-                                регистрацей)</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">ПТС</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-
-                    <hr>
-
-                </div>
-
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">Свидетельство о регистрации
-                                автомобиля</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-
-                    <hr>
-
-
-
-                </div>
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">Диагностическая карта (для автомобилей старше
-                                3-х лет)</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-
-                    <hr>
-
-
-
-                </div>
-                <div class="col-12 mt-2">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <label class="text-white" for="customFile">Водительское удостоверение всех лиц,
-                                допущенных к управлению с обеих сторон</label>
-                        </div>
-                        <div class="col">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                    </div>
-
-                    <hr>
-
-
-
-                </div>
-
-
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-end mt-3">
-                    <input type="submit" class="btn btn-outline-light mb-2" value="Оставить заявку">
-                </div>
-            </div>
-        </form>
+        
+        <?php echo do_shortcode('[contact-form-7 id="56" title="Заявка"]') ?>
+        <?php echo do_shortcode('[contact-form-7 id="55" title="Обратная связь."]') ?>
     </div>
 </div>
+
 <?php get_footer() ?>
