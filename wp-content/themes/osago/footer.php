@@ -16,7 +16,7 @@
             );
             $social = new WP_Query($args);
             ?>
-            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <ul class="navbar-nav flex-row ml-auto d-flex">
                 <?php
                 while ($social->have_posts()) :
                     $social->the_post();
