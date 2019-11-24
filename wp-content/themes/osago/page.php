@@ -1,4 +1,5 @@
 <?php get_header() ?>
+<a name="about"></a>
 <main role="main" class="container-fluid">
     <div class="container">
         <div class="row mt-5 text-main">
@@ -110,7 +111,7 @@
                     участия в нашем проекте.
                 </p>
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-4">
             <img src="<?php bloginfo('template_directory') ?>/images/client.png" alt="">
         </div>
     </div>
@@ -120,6 +121,7 @@
 <div class="container-fluid contact-from header p-3 bg-green">
     <div class="container">
         <?php echo do_shortcode('[contact-form-7 id="56" title="Заявка"]') ?>
+        
     </div>
 </div>
 

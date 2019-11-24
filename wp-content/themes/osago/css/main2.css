@@ -3,6 +3,9 @@
     font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
+body {
+    background-color: #f2f2f2;
+}
 
 h1,
 h2,
@@ -66,6 +69,12 @@ header {
     background-position: right bottom;
 }
 
+@media screen and (max-width: 400px) {
+    .bg-img {
+        background: unset !important;
+    }
+}
+
 .title {
     color: white;
     font-size: 48px;
@@ -84,9 +93,9 @@ header {
     max-width: 100%;
     height: auto;
 }
-
+/* TODO Изменить на зелёный */
 .bg-green {
-    background-color: #C5E672;
+    background-color: #539DC4;
 }
 
 /* Часто задаваемые вопросы клиентов */
@@ -173,14 +182,28 @@ header {
 }
 
 .btn-contact {
-    margin-left: auto;
     color: white;
-    background-color: #6DCD33;
+    background-color: #539DC4;
 }
+
 .contact-text {
     height: 100px !important;
 }
+
 .close {
     align-items: center;
     display: flex;
+}
+#wpcf7-f55-o2 {
+    display: none;
+}
+.screen-reader-response {
+    color: rgb(92, 25, 25);
+}
+
+.screen-reader-response ul {
+    display: none;
+}
+label {
+    margin: 0;
 }
