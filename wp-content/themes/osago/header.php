@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/main2.css">
+    
     <title><?php bloginfo('name') ?></title>
     <style>
         .bg-img {
@@ -33,26 +34,6 @@
 <body class="d-flex flex-column h-100">
     <div class="header">
         <div class="bg-img">
-            <header class="container-fluid blog-header p-3">
-                <div class="container">
-                    <div class="row flex-nowrap align-items-center">
-                        <div class="col-4 pt-1">
-                            <h1 class="blog-header-logo text-dark"><?php bloginfo('name') ?></h1>
-                        </div>
-                        <div class="col ml-auto d-flex justify-content-end align-items-center">
-                            <div class="row">
-                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
-                                    <p class="text-muted phone">+7 (999) 999-99-99</p>
-                                </div>
-                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
-                                    <a class="btn btn-sm btn-main" href="#contact">Оставить заявку</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
             <div class="container-fluid h-100">
                 <div class="container h-100">
                     <div class="row mt-5">

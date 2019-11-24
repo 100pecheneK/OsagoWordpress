@@ -62,7 +62,7 @@ header {
 .bg-img {
     background: url("/images/section1.png") no-repeat;
     background-size: 100%;
-    height: 100vh;
+    height: 60vh;
     background-position: right bottom;
 }
 
@@ -83,6 +83,10 @@ header {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.bg-green {
+    background-color: #C5E672;
 }
 
 /* Часто задаваемые вопросы клиентов */
@@ -166,4 +170,17 @@ header {
 .social img {
     height: 2em;
     width: 2em;
+}
+
+.btn-contact {
+    margin-left: auto;
+    color: white;
+    background-color: #6DCD33;
+}
+.contact-text {
+    height: 100px !important;
+}
+.close {
+    align-items: center;
+    display: flex;
 }
