@@ -3,6 +3,7 @@
     font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
+
 body {
     background-color: #f2f2f2;
 }
@@ -25,44 +26,28 @@ h1 {
 }
 
 .text-main {
-    color: #539DC4;
+    font-size: 24px;
+    color: black;
 }
 
-.btn-main {
-    background-color: #539DC4;
-    color: white;
-}
 
-.btn-main:hover {
-    color: rgb(224, 224, 224);
-}
-
-.btn-main:focus,
-.btn-main:active,
-.btn-main.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(158, 214, 245);
-}
 
 .phone {
     font-size: 0.8em;
 }
 
-.btn-outline-light {
-    border: 3px solid transparent;
-    border-color: #f8f9fa;
-}
 
 header {
-    background-color: #fff;
+    background-color: #b7e76b;
 }
 
 .header {
-    background-color: #539DC4;
+    background-color: #b7e76b;
     height: 100%;
 }
 
 .bg-img {
+    background-color: #b7e76b;
     background: url("/images/section1.png") no-repeat;
     background-size: 100%;
     height: 60vh;
@@ -74,14 +59,19 @@ header {
         background: unset !important;
     }
 }
-
+.donations {
+    font-size: 20px;
+}
+.img-thumbnail {
+    border: unset !important;
+}
 .title {
-    color: white;
+    color: black;
     font-size: 48px;
 }
 
 .lead {
-    color: white;
+    color: black;
 }
 
 .about p {
@@ -93,9 +83,10 @@ header {
     max-width: 100%;
     height: auto;
 }
+
 /* TODO Изменить на зелёный */
 .bg-green {
-    background-color: #539DC4;
+    background-color: #b7e76b;
 }
 
 /* Часто задаваемые вопросы клиентов */
@@ -182,8 +173,8 @@ header {
 }
 
 .btn-contact {
-    color: white;
-    background-color: #539DC4;
+    color: black;
+    background-color: #b7e76b;
 }
 
 .contact-text {
@@ -194,9 +185,11 @@ header {
     align-items: center;
     display: flex;
 }
+
 #wpcf7-f55-o2 {
     display: none;
 }
+
 .screen-reader-response {
     color: rgb(92, 25, 25);
 }
@@ -204,6 +197,7 @@ header {
 .screen-reader-response ul {
     display: none;
 }
+
 label {
     margin: 0;
 }

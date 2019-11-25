@@ -40,7 +40,7 @@
                         <div class="col col-lg-6">
                             <h1 class="title"><?php bloginfo('name') ?></h1>
                             <p class="lead my-3"><?php bloginfo('description') ?></p>
-                            <a class="btn btn-outline-light" href="#about">Узнать подробнее</a>
+                            <a class="btn btn-outline-dark" href="#request">Оставить заявку</a>
                         </div>
                     </div>
                 </div>

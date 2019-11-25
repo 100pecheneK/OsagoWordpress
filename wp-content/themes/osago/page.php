@@ -4,7 +4,6 @@
     <div class="container">
         <div class="row mt-5 text-main">
             <div class="col-12 col-lg-7 about">
-                <h2>Что такое электронный полис ОСАГО</h2>
                 <p class="my-3 text-dark">При покупке у нас электронного полиса ОСАГО, 5% от его
                     стоимости мы направим на
                     благотворительность
@@ -63,6 +62,9 @@
 <div class="container-fluid header p-0 mt-3 bg-green">
     <div class="container">
         <div class="row p-3 justify-content-center">
+            <div class="col-12 p-0">
+                <h2 class="text-main">Наши партнёры</h2>
+            </div>
             <?php
             $args = array(
                 'post_type' => 'labels1',
@@ -79,13 +81,13 @@
                     if (!empty($image)) : ?>
 
 
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
+                    <div class="col-12 col-md-6 col-lg-3 py-3 py-lg-0">
                         <div class="row h-100">
                             <div class="col-12 d-flex justify-content-center align-items-center">
                                 <img class="img-thumbnail" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                             </div>
-                            <div class="col-12 mt-1">
-                                <p class="d-flex m-auto btn btn-light donations">Собрано <?php the_field('donation') ?></p>
+                            <div class="col-12 mt-1 d-flex align-items-end justify-content-center">
+                                <p class="d-flex btn btn-light donations">Собрано <?php the_field('donation') ?></p>
                             </div>
                         </div>
                     </div>
@@ -116,12 +118,12 @@
         </div>
     </div>
 </div>
-<a name="contact"></a>
+<a name="request"></a>
 
 <div class="container-fluid contact-from header p-3 bg-green">
     <div class="container">
         <?php echo do_shortcode('[contact-form-7 id="56" title="Заявка"]') ?>
-        
+
     </div>
 </div>
 
