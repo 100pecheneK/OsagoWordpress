@@ -46,14 +46,6 @@ header {
     height: 100%;
 }
 
-.bg-img {
-    background-color: #b7e76b;
-    background: url("/images/section1.png") no-repeat;
-    background-size: 100%;
-    height: 60vh;
-    background-position: right bottom;
-}
-
 @media screen and (max-width: 400px) {
     .bg-img {
         background: unset !important;

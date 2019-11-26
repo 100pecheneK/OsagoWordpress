@@ -10,13 +10,13 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/main2.css">
-    
+
     <title><?php bloginfo('name') ?></title>
     <style>
         .bg-img {
+            background-color: #b7e76b;
             background: url("<?php bloginfo('template_directory') ?>/images/section1.png") no-repeat;
             background-size: 100%;
-            height: 100vh;
             background-position: right bottom;
         }
 
@@ -32,18 +32,12 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <div class="header">
-        <div class="bg-img">
-            <div class="container-fluid h-100">
-                <div class="container h-100">
-                    <div class="row mt-5">
-                        <div class="col col-lg-6">
-                            <h1 class="title"><?php bloginfo('name') ?></h1>
-                            <p class="lead my-3"><?php bloginfo('description') ?></p>
-                            <a class="btn btn-outline-dark" href="#request">Оставить заявку</a>
-                        </div>
-                    </div>
-                </div>
+    <header class="container-fluid">
+        <div class="row p-1 p-5 bg-img">
+            <div class="col-12 col-md-8 align-items-md-center">
+                <h1 class="title"><?php bloginfo('name') ?></h1>
+                <p class="lead my-3"><?php bloginfo('description') ?></p>
+                <a class="btn btn-outline-dark" href="#request">Оставить заявку</a>
             </div>
         </div>
-    </div>
+    </header>
