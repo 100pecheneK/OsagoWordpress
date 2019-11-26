@@ -13,11 +13,13 @@
 
     <title><?php bloginfo('name') ?></title>
     <style>
-        .bg-img {
-            background-color: #b7e76b;
-            background: url("<?php bloginfo('template_directory') ?>/images/section1.png") no-repeat;
-            background-size: 100%;
-            background-position: right bottom;
+        @media screen and (min-width: 425px) {
+            .bg-img {
+                background-color: #b7e76b;
+                background: url("<?php bloginfo('template_directory') ?>/images/section1.png") no-repeat;
+                background-position: right bottom;
+            }
+
         }
 
         .img-thumbnail {
@@ -32,12 +34,18 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <header class="container-fluid">
-        <div class="row p-1 p-5 bg-img">
-            <div class="col-12 col-md-8 align-items-md-center">
-                <h1 class="title"><?php bloginfo('name') ?></h1>
-                <p class="lead my-3"><?php bloginfo('description') ?></p>
-                <a class="btn btn-outline-dark" href="#request">Оставить заявку</a>
+    <header class="container-fluid p-0">
+        <div class="bg-img">
+            <div class=container>
+                <div class="row py-5">
+                    <div class="col-12 col-md-8 align-items-md-center">
+                        <h1 class="title"><?php bloginfo('name') ?></h1>
+                        <p class="lead my-3"><?php bloginfo('description') ?></p>
+                        <a class="btn btn-outline-dark" href="#request">Оставить заявку</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </header>
