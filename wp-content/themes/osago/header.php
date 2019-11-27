@@ -19,7 +19,6 @@
                 background: url("<?php bloginfo('template_directory') ?>/images/section1.png") no-repeat;
                 background-position: right bottom;
             }
-
         }
 
         .img-thumbnail {

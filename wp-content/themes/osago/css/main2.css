@@ -21,7 +21,8 @@ p {
     font-size: 16px;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 24px;
 }
 
@@ -110,7 +111,7 @@ header {
 }
 
 .bubble::after {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     border-radius: 0 0 50% 0;
     border-right: 0;
     bottom: 14px;
@@ -141,6 +142,7 @@ header {
 
 .bubble-question>span {
     background-color: #a5a5a5;
+    color: #212121;
 }
 
 .bubble-question::after {
@@ -153,7 +155,8 @@ header {
 }
 
 .bubble-answer>span {
-    background-color: #539DC4;
+    background-color: #b7e76b;
+    color: #212121;
 }
 
 .bubble-answer::after {
@@ -161,7 +164,7 @@ header {
 }
 
 .bubble-answer::before {
-    background-color: #539DC4;
+    background-color: #b7e76b;
     right: -11px;
 }
 
@@ -205,4 +208,8 @@ header {
 
 label {
     margin: 0;
+}
+
+.social a {
+    color: #212121;
 }

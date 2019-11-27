@@ -1,5 +1,5 @@
 <div class="container">
-    
+
     <footer class="blog-header  py-3">
         <div class="row justify-content-center justify-content-md-between align-items-center">
             <div class="col-12 col-md-4 justify-content-center justify-content-md-start pt-1 d-flex">
@@ -17,7 +17,7 @@
             $social = new WP_Query($args);
             ?>
             <div class="col-12 col-md-3">
-                <ul class="navbar-nav flex-row justify-content-center justify-content-md-end ml-2 d-flex">
+                <ul class="navbar-nav flex-row justify-content-center justify-content-md-end ml-2 d-flex social">
                     <?php
                     while ($social->have_posts()) :
                         $social->the_post();
@@ -42,12 +42,11 @@
 <script>
     $(document).ready(function() {
         $(function() {
-            $("#tfile").hide();
             $('#tselect').on('change', function() {
-                if (this.value == "Ограниченный список") {
+                if (this.value == "Неограниченный список") {
                     $("#tfile").hide();
                 }
-                if (this.value == "Неограниченный список") {
+                if (this.value == "Ограниченный список") {
                     $("#tfile").show();
                 }
             })
@@ -58,9 +57,10 @@
         $('#show_hide_button').click(function() {
             $('#wpcf7-f55-o2').toggle("slow")
         });
+
+       
     });
 </script>
-
 </body>
 
 </html>

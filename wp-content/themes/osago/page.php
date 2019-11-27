@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="container question-answer">
-        <div class="row">
+        <div class="row my-3">
             <div class="col">
                 <h2 class="text-main">Часто задаваемые вопросы клиентов</h2>
                 <?php
@@ -61,9 +61,9 @@
 </main>
 <div class="container-fluid header p-0 mt-3 bg-green">
     <div class="container">
-        <div class="row p-3 justify-content-center">
+        <div class="row my-3 p-3 justify-content-center">
             <div class="col-12 p-0">
-                <h2 class="text-main">Наши партнёры</h2>
+                <h2 class="text-main">Благотворительные организации</h2>
             </div>
             <?php
             $args = array(
@@ -84,7 +84,10 @@
                     <div class="col-12 col-md-6 col-lg-3 py-3 py-lg-0">
                         <div class="row h-100">
                             <div class="col-12 d-flex justify-content-center align-items-center">
-                                <img class="img-thumbnail" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                                <a href="<?php echo get_field('partner_link') ?>" title="Перейти на партнёра"><img class="img-thumbnail" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"></a>
+                            </div>
+                            <div class="col-12 mt-1 d-flex align-items-end justify-content-center">
+                                <p class="d-flex"><?php the_field('description') ?></p>
                             </div>
                             <div class="col-12 mt-1 d-flex align-items-end justify-content-center">
                                 <p class="d-flex btn btn-light donations">Собрано <?php the_field('donation') ?></p>
@@ -97,17 +100,17 @@
     </div>
 </div>
 <div class="container">
-    <div class="row mt-5 text-main">
+    <div class="row my-5 text-main">
         <div class="col-12 col-md-8 about">
             <h2>Кто может стать нашим клиентом?</h2>
-            <p class="my-3 text-dark">1. Если Вы физическое лицо с легковым автомобилем (категория&nbsp;В),
+            <p class="my-3 text-dark">Если Вы физическое лицо с легковым автомобилем (категория&nbsp;В),
                 мы с радостью оформим Вам полис.
                 <p class="my-3 text-dark">
-                    2. Наш проект пока не имеет технической возможности помогать с& donatоформлением полиса по
+                    Наш проект пока не имеет технической возможности помогать с&nbsp;оформлением полиса по
                     другим видам транспортных средств.
                 </p>
                 <p class="my-3 text-dark">
-                    3. Если Вы - юридическое лицо, желающее принять участие в проекте,
+                    Если Вы юридическое лицо, желающее принять участие в проекте,
                     просим написать нам об этом через форму обратной связи. Мы обязательно
                     свяжемся с Вами, и постараемся предложить индивидуальный вариант
                     участия в нашем проекте.
