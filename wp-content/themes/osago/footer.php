@@ -6,7 +6,7 @@
                 <h1 class="blog-header-logo text-dark"><?php bloginfo('name') ?></h1>
             </div>
             <?php echo do_shortcode('[contact-form-7 id="55" title="Обратная связь."]') ?>
-            <div class="col-12 col-md-5 justify-content-center justify-content-md-end d-flex">
+            <div class="col-12 col-md-5 justify-content-center justify-content-md-end d-flex ml-auto">
                 <button type="button" class="btn btn-contact" id="show_hide_button">Обратная связь</button>
             </div>
             <?php
@@ -58,7 +58,7 @@
             $('#wpcf7-f55-o2').toggle("slow")
         });
 
-       
+
     });
 </script>
 </body>

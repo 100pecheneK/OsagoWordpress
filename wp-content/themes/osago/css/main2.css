@@ -198,7 +198,7 @@ header {
     display: none;
 }
 
-.screen-reader-response {
+.screen-reader-response, .wpcf7-not-valid-tip {
     color: rgb(92, 25, 25);
 }
 
@@ -212,4 +212,9 @@ label {
 
 .social a {
     color: #212121;
+}
+
+.description {
+
+    text-align: center;
 }

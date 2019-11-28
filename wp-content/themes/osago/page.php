@@ -81,13 +81,13 @@
                     if (!empty($image)) : ?>
 
 
-                    <div class="col-12 col-md-6 col-lg-3 py-3 py-lg-0">
+                    <div class="col-12 col-md-6 py-3 pt-lg-0 border-bottom pb-1">
                         <div class="row h-100">
-                            <div class="col-12 d-flex justify-content-center align-items-center">
+                            <div class="col-6 d-flex justify-content-center align-items-center">
                                 <a href="<?php echo get_field('partner_link') ?>" title="Перейти на партнёра"><img class="img-thumbnail" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"></a>
                             </div>
-                            <div class="col-12 mt-1 d-flex align-items-end justify-content-center">
-                                <p class="d-flex"><?php the_field('description') ?></p>
+                            <div class="col-6 d-flex align-items-center justify-content-center">
+                                <p class="d-flex description"><?php the_field('description') ?></p>
                             </div>
                             <div class="col-12 mt-1 d-flex align-items-end justify-content-center">
                                 <p class="d-flex btn btn-light donations">Собрано <?php the_field('donation') ?></p>
@@ -124,7 +124,7 @@
 <a name="request"></a>
 
 <div class="container-fluid contact-from header p-3 bg-green">
-    <div class="container">
+    <div class="container p-0 p-md-5">
         <?php echo do_shortcode('[contact-form-7 id="56" title="Заявка"]') ?>
 
     </div>
