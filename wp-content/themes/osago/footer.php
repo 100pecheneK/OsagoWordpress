@@ -33,6 +33,13 @@
             </div>
 
         </div>
+        <!-- <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <a href="http://baranov.pro/" class="d-flex justify-content-center">
+                    <img class="copy" src="<?php bloginfo('template_directory') ?>/images/copy.png" alt="Petr Baranov">
+                </a>
+            </div>
+        </div> -->
     </footer>
 </div>
 
